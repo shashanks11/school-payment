@@ -125,12 +125,13 @@ The frontend will run on `http://localhost:5173`
 ### Backend `.env`
 
 ```env
+NODE_ENV=development
 # Database
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/school-payments
 
 # JWT
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-JWT_EXPIRES_IN=7d
+JWT_EXPIRES_IN=24h
 
 # Payment API
 PAYMENT_API_URL=https://dev-vanilla.edviron.com/erp
